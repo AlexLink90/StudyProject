@@ -10,6 +10,6 @@ import org.springframework.stereotype.Service;
 public class SubtractionService implements CalculatorService {
     @Override
     public MathResultInfo calculate(int param1, int param2) {
-        return MathResultInfoMapper.convert(param1, param2, OperationType.SUBTRACTION.name(), param1 - param2);
+        return MathResultInfoMapper.convert(param1, param2, OperationType.SUBTRACTION, param1 - param2);
     }
 }

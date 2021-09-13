@@ -12,6 +12,6 @@ public class AdditionService implements CalculatorService {
     @Override
     public MathResultInfo calculate(int param1, int param2) {
 
-        return MathResultInfoMapper.convert(param1, param2, OperationType.ADDITION.name(), param1 + param2);
+        return MathResultInfoMapper.convert(param1, param2, OperationType.ADDITION, param1 + param2);
     }
 }

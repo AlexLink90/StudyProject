@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class DivisionService implements CalculatorService {
     @Override
     public MathResultInfo calculate(int param1, int param2) {
-        if (param2 != 0) return MathResultInfoMapper.convert(param1, param2, OperationType.DIVISION.name(), param1 / param2);
-        else return MathResultInfoMapper.convert(param1, param2, OperationType.DIVISION.name(), 0);
+        if (param2 != 0) return MathResultInfoMapper.convert(param1, param2, OperationType.DIVISION, param1 / param2);
+        else return MathResultInfoMapper.convert(param1, param2, OperationType.DIVISION, 0);
     }
 }

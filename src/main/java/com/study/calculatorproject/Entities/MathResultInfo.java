@@ -1,11 +1,15 @@
 package com.study.calculatorproject.Entities;
 
-import lombok.Data;
+import com.study.calculatorproject.enums.OperationType;
+import lombok.*;
 
-@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class MathResultInfo {
     private int operandOne;
     private int operandTwo;
-    private String operation;
+    private OperationType operation;
     private double result;
 }
